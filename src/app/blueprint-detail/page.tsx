@@ -54,15 +54,15 @@ export default function BlueprintDetailPage() {
       <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-6">
         {/* ── Breadcrumb ────────────────────────────── */}
         <nav className="flex items-center gap-1.5 text-sm text-gray-500 mb-6">
-          <Link href="/blueprint-grid" className="flex items-center gap-1 hover:text-[#e85d04] transition-colors">
+          <Link href="/blueprint-grid" className="flex items-center gap-1 hover:text-[#008fa6] transition-colors">
             <Home size={14} /> Home
           </Link>
           <ChevronRight size={13} className="text-gray-300" />
-          <Link href="/blueprint-search" className="hover:text-[#e85d04] transition-colors">
+          <Link href="/blueprint-search" className="hover:text-[#008fa6] transition-colors">
             Search Results
           </Link>
           <ChevronRight size={13} className="text-gray-300" />
-          <span className="text-[#e85d04] font-medium">Item Detail</span>
+          <span className="text-[#008fa6] font-medium">Item Detail</span>
         </nav>
 
         {/* ── 2-column layout ────────────────────────── */}
@@ -92,7 +92,7 @@ export default function BlueprintDetailPage() {
               >
                 <Heart
                   size={16}
-                  className={liked ? "fill-[#e85d04] text-[#e85d04]" : "text-gray-400"}
+                  className={liked ? "fill-[#008fa6] text-[#008fa6]" : "text-gray-400"}
                 />
               </button>
 
@@ -122,7 +122,7 @@ export default function BlueprintDetailPage() {
                   className={cn(
                     "relative w-16 h-12 flex-shrink-0 rounded-xl overflow-hidden border-2 transition-all",
                     activeImage === i
-                      ? "border-[#e85d04] shadow-sm"
+                      ? "border-[#008fa6] shadow-sm"
                       : "border-transparent opacity-60 hover:opacity-100"
                   )}
                 >
@@ -140,7 +140,7 @@ export default function BlueprintDetailPage() {
                   className={cn(
                     "flex-shrink-0 text-xs font-semibold px-4 py-2 rounded-full border transition-all",
                     activeTab === tab
-                      ? "bg-[#0d1b2a] border-[#0d1b2a] text-white"
+                      ? "bg-[#0a1820] border-[#0a1820] text-white"
                       : "border-gray-200 text-gray-500 hover:border-gray-400"
                   )}
                 >
@@ -166,7 +166,7 @@ export default function BlueprintDetailPage() {
               </div>
 
               {/* Main title */}
-              <h1 className="text-xl md:text-2xl font-extrabold text-[#0d1b2a] leading-tight mb-2">
+              <h1 className="text-xl md:text-2xl font-extrabold text-[#0a1820] leading-tight mb-2">
                 Item Alpha X2 — Premium Standard Edition 2023
               </h1>
 
@@ -177,7 +177,7 @@ export default function BlueprintDetailPage() {
             </div>
 
             {/* Promo badge */}
-            <div className="inline-flex items-center gap-1.5 bg-[#fff5f0] border border-[#e85d04]/30 text-[#e85d04] text-xs font-bold px-3 py-1.5 rounded-full">
+            <div className="inline-flex items-center gap-1.5 bg-[#f0fbfc] border border-[#008fa6]/30 text-[#008fa6] text-xs font-bold px-3 py-1.5 rounded-full">
               <Tag size={11} />
               Best Value Deal
             </div>
@@ -185,7 +185,7 @@ export default function BlueprintDetailPage() {
             {/* Price */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 space-y-3">
               <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-extrabold text-[#e85d04]">
+                <span className="text-3xl font-extrabold text-[#008fa6]">
                   699,000
                 </span>
                 <span className="text-sm text-gray-400">units</span>
@@ -196,7 +196,7 @@ export default function BlueprintDetailPage() {
                 {SPECS.map(({ icon: Icon, label, note }) => (
                   <div key={note} className="flex flex-col items-center gap-1 text-center">
                     <Icon size={18} className="text-gray-400" />
-                    <p className="text-xs font-bold text-[#0d1b2a]">{label}</p>
+                    <p className="text-xs font-bold text-[#0a1820]">{label}</p>
                     <p className="text-[10px] text-gray-400">{note}</p>
                   </div>
                 ))}
@@ -223,7 +223,7 @@ export default function BlueprintDetailPage() {
                 S
               </div>
               <div className="flex-1">
-                <p className="text-sm font-bold text-[#0d1b2a]">Seller Omega</p>
+                <p className="text-sm font-bold text-[#0a1820]">Seller Omega</p>
                 <p className="text-xs text-gray-400 flex items-center gap-1 mt-0.5">
                   <CheckCircle2 size={11} className="text-green-500" /> Verified seller · 42 listings
                 </p>
@@ -232,18 +232,18 @@ export default function BlueprintDetailPage() {
 
             {/* CTA buttons */}
             <div className="flex gap-3">
-              <button className="flex-1 flex items-center justify-center gap-2 bg-[#e85d04] hover:bg-[#cf4f02] text-white font-bold py-3.5 rounded-xl text-sm transition-colors">
+              <button className="flex-1 flex items-center justify-center gap-2 bg-[#008fa6] hover:bg-[#007a8f] text-white font-bold py-3.5 rounded-xl text-sm transition-colors">
                 <Phone size={15} />
                 Contact Seller
               </button>
-              <button className="flex-1 flex items-center justify-center gap-2 border border-[#e85d04] text-[#e85d04] hover:bg-[#fff5f0] font-bold py-3.5 rounded-xl text-sm transition-colors">
+              <button className="flex-1 flex items-center justify-center gap-2 border border-[#008fa6] text-[#008fa6] hover:bg-[#f0fbfc] font-bold py-3.5 rounded-xl text-sm transition-colors">
                 <MessageCircle size={15} />
                 Send Message
               </button>
             </div>
 
             {/* Share */}
-            <button className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-[#e85d04] transition-colors">
+            <button className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-[#008fa6] transition-colors">
               <Share2 size={13} /> Share this listing
             </button>
           </div>

@@ -48,7 +48,7 @@ export default function NotFound() {
             {/* Car body (navy) */}
             <g transform="translate(80, 185) rotate(-15)">
               {/* Car silhouette */}
-              <rect x="0" y="14" width="64" height="26" rx="4" fill="#0D1B2A" />
+              <rect x="0" y="14" width="64" height="26" rx="4" fill="#0a1820" />
               <path d="M 10 14 L 16 2 L 48 2 L 54 14 Z" fill="#1A2E45" />
               {/* Windows */}
               <rect x="17" y="4" width="12" height="9" rx="2" fill="#7BAFD4" opacity="0.7" />
@@ -67,7 +67,7 @@ export default function NotFound() {
               {/* Pin body */}
               <path
                 d="M 20 0 C 9 0 0 9 0 20 C 0 35 20 56 20 56 C 20 56 40 35 40 20 C 40 9 31 0 20 0 Z"
-                fill="#E85D04"
+                fill="#008fa6"
               />
               {/* Pin hole */}
               <circle cx="20" cy="20" r="10" fill="white" />
@@ -78,7 +78,7 @@ export default function NotFound() {
                 textAnchor="middle"
                 fontSize="10"
                 fontWeight="bold"
-                fill="#E85D04"
+                fill="#008fa6"
                 fontFamily="system-ui, sans-serif"
               >
                 404
@@ -87,8 +87,8 @@ export default function NotFound() {
 
             {/* Destination flag */}
             <g transform="translate(335, 45)">
-              <line x1="4" y1="0" x2="4" y2="28" stroke="#0D1B2A" strokeWidth="2" />
-              <path d="M 4 0 L 22 6 L 4 12 Z" fill="#E85D04" />
+              <line x1="4" y1="0" x2="4" y2="28" stroke="#0a1820" strokeWidth="2" />
+              <path d="M 4 0 L 22 6 L 4 12 Z" fill="#008fa6" />
             </g>
           </svg>
         </div>

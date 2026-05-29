@@ -89,7 +89,7 @@ const ITEMS: Item[] = [
 
 const QUICK_LINKS = [
   { label: "Service 1", emoji: "💳", bg: "bg-[#2b55cc]", href: "/blueprint-hero" },
-  { label: "Service 2", emoji: "📊", bg: "bg-[#0d1b2a]", href: "/blueprint-feed"  },
+  { label: "Service 2", emoji: "📊", bg: "bg-[#0a1820]", href: "/blueprint-feed"  },
   { label: "Service 3", emoji: "🔍", bg: "bg-green-600",  href: "/blueprint-search"},
   { label: "Service 4", emoji: "🛡️", bg: "bg-amber-500",  href: "/blueprint-hero" },
 ];

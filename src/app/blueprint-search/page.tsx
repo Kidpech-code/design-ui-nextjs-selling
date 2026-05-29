@@ -59,7 +59,7 @@ function FilterSection({
     <div className="border-t border-gray-100">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between py-3 text-sm font-semibold text-gray-800 hover:text-[#e85d04] transition-colors"
+        className="w-full flex items-center justify-between py-3 text-sm font-semibold text-gray-800 hover:text-[#008fa6] transition-colors"
       >
         <span>{title}</span>
         <ChevronDown
@@ -95,12 +95,12 @@ function ResultCard({ item }: { item: (typeof ITEMS)[0] }) {
         {/* Badges */}
         <div className="absolute top-2 left-2 flex gap-1">
           {item.isNew && (
-            <span className="bg-[#0d1b2a] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+            <span className="bg-[#0a1820] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
               NEW
             </span>
           )}
           {item.isFeatured && (
-            <span className="bg-[#e85d04] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+            <span className="bg-[#008fa6] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
               FEATURED
             </span>
           )}
@@ -111,17 +111,17 @@ function ResultCard({ item }: { item: (typeof ITEMS)[0] }) {
           aria-label={liked ? "Remove from saved" : "Save item"}
           className="absolute top-2 right-2 w-11 h-11 flex items-center justify-center rounded-full bg-white/90 shadow-sm hover:bg-white transition-colors"
         >
-          <Heart size={13} className={liked ? "fill-[#e85d04] text-[#e85d04]" : "text-gray-400"} />
+          <Heart size={13} className={liked ? "fill-[#008fa6] text-[#008fa6]" : "text-gray-400"} />
         </button>
       </div>
       {/* Info */}
       <div className="p-3">
         <p className="text-[10px] text-gray-400 font-medium mb-0.5">{item.category}</p>
-        <h3 className="font-bold text-[#0d1b2a] text-sm leading-snug line-clamp-2 mb-2">
+        <h3 className="font-bold text-[#0a1820] text-sm leading-snug line-clamp-2 mb-2">
           {item.title}
         </h3>
         <p className="text-[11px] text-gray-500 mb-2">{item.meta}</p>
-        <p className="text-lg font-extrabold text-[#e85d04] mb-2">
+        <p className="text-lg font-extrabold text-[#008fa6] mb-2">
           {formatPrice(item.price)}
         </p>
         <div className="flex items-center justify-between text-[10px] text-gray-400">
@@ -171,12 +171,12 @@ export default function BlueprintSearchPage() {
         <nav className="flex items-center gap-1.5 text-sm text-gray-500 mb-6">
           <Link
             href="/blueprint-grid"
-            className="flex items-center gap-1 hover:text-[#e85d04] transition-colors"
+            className="flex items-center gap-1 hover:text-[#008fa6] transition-colors"
           >
             <Home size={14} /> Home
           </Link>
           <ChevronRight size={13} className="text-gray-300" />
-          <span className="text-[#e85d04] font-medium">Search Results</span>
+          <span className="text-[#008fa6] font-medium">Search Results</span>
         </nav>
         {/* ── 2-column layout ────────────────────────── */}
         <div className="flex gap-6 items-start">
@@ -185,7 +185,7 @@ export default function BlueprintSearchPage() {
           <aside className="hidden lg:block w-[280px] flex-shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden sticky top-[calc(var(--navbar-height,60px)+16px)] self-start">
             {/* Search input */}
             <div className="p-4 border-b border-gray-100">
-              <div className="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 focus-within:ring-2 focus-within:ring-[#e85d04]/30 focus-within:border-[#e85d04] transition-all">
+              <div className="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 focus-within:ring-2 focus-within:ring-[#008fa6]/30 focus-within:border-[#008fa6] transition-all">
                 <Search size={14} className="text-gray-400 flex-shrink-0" />
                 <input
                   type="text"
@@ -206,16 +206,16 @@ export default function BlueprintSearchPage() {
             <div className="px-4 pb-4">
               <FilterSection title="Brand / Model" defaultOpen>
                 <div className="space-y-2">
-                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 appearance-none cursor-pointer">
+                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 appearance-none cursor-pointer">
                     <option>All Brands</option>
                     {["Brand A","Brand B","Brand C","Brand D"].map((b) => (
                       <option key={b}>{b}</option>
                     ))}
                   </select>
-                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 appearance-none cursor-pointer">
+                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 appearance-none cursor-pointer">
                     <option>All Models</option>
                   </select>
-                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 appearance-none cursor-pointer">
+                  <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 appearance-none cursor-pointer">
                     <option>All Sub-models</option>
                   </select>
                 </div>
@@ -226,12 +226,12 @@ export default function BlueprintSearchPage() {
                   <input
                     type="number"
                     placeholder="Min"
-                    className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 focus:border-[#e85d04]"
+                    className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 focus:border-[#008fa6]"
                   />
                   <input
                     type="number"
                     placeholder="Max"
-                    className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 focus:border-[#e85d04]"
+                    className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 focus:border-[#008fa6]"
                   />
                 </div>
               </FilterSection>
@@ -241,7 +241,7 @@ export default function BlueprintSearchPage() {
                   <label key={c} className="flex items-center gap-2.5 py-1.5 cursor-pointer group">
                     <input
                       type="checkbox"
-                      className="w-4 h-4 rounded border-gray-300 accent-[#e85d04] cursor-pointer"
+                      className="w-4 h-4 rounded border-gray-300 accent-[#008fa6] cursor-pointer"
                     />
                     <span className="text-sm text-gray-600 group-hover:text-gray-900">{c}</span>
                   </label>
@@ -253,14 +253,14 @@ export default function BlueprintSearchPage() {
                   <label key={z} className="flex items-center gap-2.5 py-1.5 cursor-pointer group">
                     <input
                       type="checkbox"
-                      className="w-4 h-4 rounded border-gray-300 accent-[#e85d04] cursor-pointer"
+                      className="w-4 h-4 rounded border-gray-300 accent-[#008fa6] cursor-pointer"
                     />
                     <span className="text-sm text-gray-600 group-hover:text-gray-900">{z}</span>
                   </label>
                 ))}
               </FilterSection>
 
-              <button className="w-full mt-2 text-sm text-gray-400 hover:text-[#e85d04] underline-offset-2 hover:underline transition-colors">
+              <button className="w-full mt-2 text-sm text-gray-400 hover:text-[#008fa6] underline-offset-2 hover:underline transition-colors">
                 Reset filters
               </button>
             </div>
@@ -279,7 +279,7 @@ export default function BlueprintSearchPage() {
                   >
                     {chip.label}
                     <button
-                      onClick={() => removeChip(chip.id)}                      aria-label={`Remove ${chip.label} filter`}                      className="text-gray-400 hover:text-[#e85d04] transition-colors"
+                      onClick={() => removeChip(chip.id)}                      aria-label={`Remove ${chip.label} filter`}                      className="text-gray-400 hover:text-[#008fa6] transition-colors"
                     >
                       <X size={11} />
                     </button>
@@ -288,7 +288,7 @@ export default function BlueprintSearchPage() {
                 {chips.length > 0 && (
                   <button
                     onClick={clearAll}
-                    className="text-xs text-[#e85d04] font-semibold hover:underline underline-offset-2"
+                    className="text-xs text-[#008fa6] font-semibold hover:underline underline-offset-2"
                   >
                     Clear all
                   </button>
@@ -299,7 +299,7 @@ export default function BlueprintSearchPage() {
               <div ref={sortRef} className="relative">
                 <button
                   onClick={() => setShowSort(!showSort)}
-                  className="flex items-center gap-2 bg-white border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-xl hover:border-[#e85d04] transition-colors"
+                  className="flex items-center gap-2 bg-white border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-xl hover:border-[#008fa6] transition-colors"
                 >
                   <span>Sort: {sort}</span>
                   <ChevronDown size={14} className={cn("transition-transform", showSort && "rotate-180")} />
@@ -312,7 +312,7 @@ export default function BlueprintSearchPage() {
                         onClick={() => { setSort(opt); setShowSort(false); }}
                         className={cn(
                           "w-full text-left px-4 py-2.5 text-sm hover:bg-gray-50 transition-colors",
-                          sort === opt ? "text-[#e85d04] font-semibold" : "text-gray-600"
+                          sort === opt ? "text-[#008fa6] font-semibold" : "text-gray-600"
                         )}
                       >
                         {opt}
@@ -342,12 +342,12 @@ export default function BlueprintSearchPage() {
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 lg:hidden">
         <button
           onClick={() => setShowMobileFilter(true)}
-          className="flex items-center gap-2 bg-[#0d1b2a] text-white font-semibold text-sm px-6 py-3.5 rounded-full shadow-2xl"
+          className="flex items-center gap-2 bg-[#0a1820] text-white font-semibold text-sm px-6 py-3.5 rounded-full shadow-2xl"
         >
           <SlidersHorizontal size={16} />
           Filter &amp; Sort
           {chips.length > 0 && (
-            <span className="w-5 h-5 rounded-full bg-[#e85d04] text-white text-[10px] font-bold flex items-center justify-center">
+            <span className="w-5 h-5 rounded-full bg-[#008fa6] text-white text-[10px] font-bold flex items-center justify-center">
               {chips.length}
             </span>
           )}
@@ -366,8 +366,8 @@ export default function BlueprintSearchPage() {
           >
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 sticky top-0 bg-white z-10">
-              <span className="font-bold text-[#0d1b2a] flex items-center gap-2 text-base">
-                <SlidersHorizontal size={16} className="text-[#e85d04]" /> Filter Options
+              <span className="font-bold text-[#0a1820] flex items-center gap-2 text-base">
+                <SlidersHorizontal size={16} className="text-[#008fa6]" /> Filter Options
               </span>
               <button
                 onClick={() => setShowMobileFilter(false)}
@@ -382,26 +382,26 @@ export default function BlueprintSearchPage() {
             <div className="flex-1 overflow-y-auto px-4 py-3 text-sm">
               <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Brand / Model</p>
               <div className="space-y-2 mb-4">
-                <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 appearance-none cursor-pointer">
+                <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 appearance-none cursor-pointer">
                   <option>All Brands</option>
                   {["Brand A","Brand B","Brand C","Brand D"].map((b) => <option key={b}>{b}</option>)}
                 </select>
-                <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 appearance-none cursor-pointer">
+                <select className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 appearance-none cursor-pointer">
                   <option>All Models</option>
                 </select>
               </div>
 
               <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Price Range</p>
               <div className="grid grid-cols-2 gap-2 mb-4">
-                <input type="number" placeholder="Min" className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 focus:border-[#e85d04]" />
-                <input type="number" placeholder="Max" className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#e85d04]/30 focus:border-[#e85d04]" />
+                <input type="number" placeholder="Min" className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 focus:border-[#008fa6]" />
+                <input type="number" placeholder="Max" className="border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#008fa6]/30 focus:border-[#008fa6]" />
               </div>
 
               <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Condition</p>
               <div className="space-y-1 mb-4">
                 {["New", "Like New", "Good", "Fair"].map((c) => (
                   <label key={c} className="flex items-center gap-2.5 py-1.5 cursor-pointer">
-                    <input type="checkbox" className="w-4 h-4 rounded border-gray-300 accent-[#e85d04]" />
+                    <input type="checkbox" className="w-4 h-4 rounded border-gray-300 accent-[#008fa6]" />
                     <span className="text-gray-600">{c}</span>
                   </label>
                 ))}
@@ -415,7 +415,7 @@ export default function BlueprintSearchPage() {
                     onClick={() => setSort(opt)}
                     className={cn(
                       "w-full text-left px-3 py-2.5 rounded-xl text-sm transition-colors",
-                      sort === opt ? "bg-[#fff5f0] text-[#e85d04] font-semibold" : "text-gray-600 hover:bg-gray-50"
+                      sort === opt ? "bg-[#f0fbfc] text-[#008fa6] font-semibold" : "text-gray-600 hover:bg-gray-50"
                     )}
                   >
                     {opt}
@@ -428,7 +428,7 @@ export default function BlueprintSearchPage() {
             <div className="p-4 border-t border-gray-100 bg-white">
               <button
                 onClick={() => setShowMobileFilter(false)}
-                className="w-full bg-[#e85d04] hover:bg-[#cf4f02] text-white font-bold py-3.5 rounded-xl text-sm transition-colors"
+                className="w-full bg-[#008fa6] hover:bg-[#007a8f] text-white font-bold py-3.5 rounded-xl text-sm transition-colors"
               >
                 Show Results
               </button>

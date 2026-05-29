@@ -24,7 +24,7 @@ export default function HeroBanner() {
       <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-12">
         {/* Small tag */}
         <div className="flex items-center gap-1.5 mb-3">
-          <div className="flex items-center gap-1 bg-[#e85d04] text-white text-xs font-semibold px-3 py-1 rounded-full">
+          <div className="flex items-center gap-1 bg-[#008fa6] text-white text-xs font-semibold px-3 py-1 rounded-full">
             <Tag size={10} />
             <span>Featured Deal</span>
           </div>
@@ -44,7 +44,7 @@ export default function HeroBanner() {
         {/* CTA button */}
         <Link
           href="/blueprint-search"
-          className="inline-flex self-start items-center gap-2 bg-[#e85d04] hover:bg-[#cf4f02] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors shadow-lg shadow-[#e85d04]/30"
+          className="inline-flex self-start items-center gap-2 bg-[#008fa6] hover:bg-[#007a8f] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors shadow-lg shadow-[#008fa6]/30"
         >
           Browse Now
         </Link>

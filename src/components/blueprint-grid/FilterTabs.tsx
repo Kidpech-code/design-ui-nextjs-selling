@@ -39,8 +39,8 @@ export default function FilterTabs({
             className={cn(
               "text-sm font-semibold px-4 py-2 rounded-full border transition-all",
               activeTab === label
-                ? "bg-[#e85d04] border-[#e85d04] text-white shadow-sm"
-                : "border-gray-200 text-gray-500 hover:border-[#e85d04] hover:text-[#e85d04] bg-white"
+                ? "bg-[#008fa6] border-[#008fa6] text-white shadow-sm"
+                : "border-gray-200 text-gray-500 hover:border-[#008fa6] hover:text-[#008fa6] bg-white"
             )}
           >
             {label}{" "}
@@ -62,7 +62,7 @@ export default function FilterTabs({
           onClick={() => handleView("grid")}
           className={cn(
             "p-2 rounded-lg transition-colors",
-            view === "grid" ? "bg-[#e85d04] text-white" : "text-gray-400 hover:text-gray-600"
+            view === "grid" ? "bg-[#008fa6] text-white" : "text-gray-400 hover:text-gray-600"
           )}
         >
           <Grid3X3 size={15} />
@@ -71,7 +71,7 @@ export default function FilterTabs({
           onClick={() => handleView("list")}
           className={cn(
             "p-2 rounded-lg transition-colors",
-            view === "list" ? "bg-[#e85d04] text-white" : "text-gray-400 hover:text-gray-600"
+            view === "list" ? "bg-[#008fa6] text-white" : "text-gray-400 hover:text-gray-600"
           )}
         >
           <List size={15} />

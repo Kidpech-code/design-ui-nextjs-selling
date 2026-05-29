@@ -178,11 +178,15 @@ body {
   to { opacity: 1; }
 }
 
-/* Smooth transition for theme switch */
-*,
-*::before,
-*::after {
-  transition-property: background-color, border-color, color;
+/* Smooth transition for theme switch — scoped to interactive elements only */
+a,
+button,
+input,
+select,
+textarea,
+[class*="hover:"],
+[class*="focus:"] {
+  transition-property: background-color, border-color, color, box-shadow;
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }

@@ -49,12 +49,12 @@ export default function ItemCard({ item, className }: ItemCardProps) {
         {/* Badges top-left */}
         <div className="absolute top-2 left-2 flex flex-col gap-1">
           {item.isFeatured && (
-            <span className="bg-[#e85d04] text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
+            <span className="bg-[#008fa6] text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
               Featured
             </span>
           )}
           {item.isNew && (
-            <span className="bg-[#0d1b2a] text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
+            <span className="bg-[#0a1820] text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-full">
               New
             </span>
           )}
@@ -74,7 +74,7 @@ export default function ItemCard({ item, className }: ItemCardProps) {
             e.stopPropagation();
           }}
         >
-          <Heart size={16} className="text-gray-500 hover:text-[#e85d04] transition-colors" />
+          <Heart size={16} className="text-gray-500 hover:text-[#008fa6] transition-colors" />
         </button>
       </div>
 
@@ -84,7 +84,7 @@ export default function ItemCard({ item, className }: ItemCardProps) {
           {item.title}
         </h3>
 
-        <p className="text-lg font-bold text-[#e85d04] mt-2">
+        <p className="text-lg font-bold text-[#008fa6] mt-2">
           ฿{formatPrice(item.price)}
         </p>
         {item.monthlyRate && (

@@ -8,7 +8,7 @@ const PATTERNS = [
     source: "Homepage",
     concept: "Minimal navbar · Sidebar category icon grid + accordion filters · Pill filter tabs · Static promo banner · Card grid",
     tags: ["Marketplace", "Homepage", "Listing"],
-    color: "from-orange-500 to-red-500",
+    color: "from-teal-500 to-cyan-600",
     href: "/blueprint-grid",
     letter: "G",
   },
@@ -60,10 +60,10 @@ export default function IndexPage() {
       {/* ── Header ─────────────────────────────────── */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-6 py-10 text-center">
-          <span className="inline-block bg-[#fff5f0] text-[#e85d04] text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">
+          <span className="inline-block bg-[#f0fbfc] text-[#008fa6] text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">
             UI Design Blueprint Library
           </span>
-          <h1 className="text-3xl font-extrabold text-[#0d1b2a]">Blueprint Design Patterns</h1>
+          <h1 className="text-3xl font-extrabold text-[#0a1820]">Blueprint Design Patterns</h1>
           <p className="text-gray-500 mt-2 text-sm">
             5 structural layout patterns — based on real marketplace page structures
           </p>
@@ -98,7 +98,7 @@ export default function IndexPage() {
 
               {/* Info */}
               <div className="p-5">
-                <h2 className="font-extrabold text-[#0d1b2a] text-base">{p.name}</h2>
+                <h2 className="font-extrabold text-[#0a1820] text-base">{p.name}</h2>
                 <p className="text-xs text-gray-500 mt-1.5 leading-relaxed line-clamp-3">
                   {p.concept}
                 </p>
@@ -114,7 +114,7 @@ export default function IndexPage() {
                   ))}
                 </div>
 
-                <p className="text-xs font-semibold text-[#e85d04] mt-4 group-hover:underline underline-offset-2">
+                <p className="text-xs font-semibold text-[#008fa6] mt-4 group-hover:underline underline-offset-2">
                   View blueprint →
                 </p>
               </div>

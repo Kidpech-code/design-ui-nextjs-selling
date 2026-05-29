@@ -28,7 +28,7 @@ export default function Navbar() {
             </button>
             <Link
               href="/"
-              className="font-extrabold text-[20px] text-[#0d1b2a] tracking-tight select-none"
+              className="font-extrabold text-[20px] text-[#0a1820] tracking-tight select-none"
             >
               Marka
             </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               href="/blueprint-hero"
-              className="border border-[#e85d04] text-[#e85d04] text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#e85d04] hover:text-white transition-colors"
+              className="border border-[#008fa6] text-[#008fa6] text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#008fa6] hover:text-white transition-colors"
             >
               List Item
             </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
           >
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-              <span className="font-extrabold text-[#0d1b2a] text-lg tracking-tight">
+              <span className="font-extrabold text-[#0a1820] text-lg tracking-tight">
                 Marka
               </span>
               <button
@@ -90,7 +90,7 @@ export default function Navbar() {
                   key={label}
                   href={href}
                   onClick={() => setDrawerOpen(false)}
-                  className="flex items-center px-3 py-2.5 rounded-lg hover:bg-gray-50 hover:text-[#e85d04] transition-colors"
+                  className="flex items-center px-3 py-2.5 rounded-lg hover:bg-gray-50 hover:text-[#008fa6] transition-colors"
                 >
                   {label}
                 </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
               <Link
                 href="/blueprint-hero"
                 onClick={() => setDrawerOpen(false)}
-                className="block text-center bg-[#e85d04] hover:bg-[#cf4f02] text-white font-semibold py-3 rounded-full transition-colors text-sm"
+                className="block text-center bg-[#008fa6] hover:bg-[#007a8f] text-white font-semibold py-3 rounded-full transition-colors text-sm"
               >
                 List Your Item — Free
               </Link>

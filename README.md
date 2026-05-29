@@ -38,43 +38,17 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Screenshots
 
-> Captured with [screenshot-tool](https://github.com/Kidpech-code/screenshot-tool) — Desktop 1440px · Mobile iPhone 14 · Dark Mode
-
-### Desktop (1440px)
+> Desktop 1440px · Full-page · Teal/Ocean theme
 
 | Page             | Screenshot                                                                   |
 | ---------------- | ---------------------------------------------------------------------------- |
-| Home             | ![Home](screenshots/desktop/localhost_3000.png)                              |
-| Blueprint Grid   | ![Blueprint Grid](screenshots/desktop/localhost_3000_blueprint-grid.png)     |
-| Blueprint Search | ![Blueprint Search](screenshots/desktop/localhost_3000_blueprint-search.png) |
-| Blueprint Detail | ![Blueprint Detail](screenshots/desktop/localhost_3000_blueprint-detail.png) |
-| Blueprint Hero   | ![Blueprint Hero](screenshots/desktop/localhost_3000_blueprint-hero.png)     |
-| Blueprint Feed   | ![Blueprint Feed](screenshots/desktop/localhost_3000_blueprint-feed.png)     |
-| Search           | ![Search](screenshots/desktop/localhost_3000_search.png)                     |
-
-### Mobile — iPhone 14 (390px)
-
-| Page             | Screenshot                                                                         |
-| ---------------- | ---------------------------------------------------------------------------------- |
-| Home             | ![Home Mobile](screenshots/mobile/localhost_3000.png)                              |
-| Blueprint Grid   | ![Blueprint Grid Mobile](screenshots/mobile/localhost_3000_blueprint-grid.png)     |
-| Blueprint Search | ![Blueprint Search Mobile](screenshots/mobile/localhost_3000_blueprint-search.png) |
-| Blueprint Detail | ![Blueprint Detail Mobile](screenshots/mobile/localhost_3000_blueprint-detail.png) |
-| Blueprint Hero   | ![Blueprint Hero Mobile](screenshots/mobile/localhost_3000_blueprint-hero.png)     |
-| Blueprint Feed   | ![Blueprint Feed Mobile](screenshots/mobile/localhost_3000_blueprint-feed.png)     |
-| Search           | ![Search Mobile](screenshots/mobile/localhost_3000_search.png)                     |
-
-### Dark Mode (1440px)
-
-| Page             | Screenshot                                                                     |
-| ---------------- | ------------------------------------------------------------------------------ |
-| Home             | ![Home Dark](screenshots/dark/localhost_3000.png)                              |
-| Blueprint Grid   | ![Blueprint Grid Dark](screenshots/dark/localhost_3000_blueprint-grid.png)     |
-| Blueprint Search | ![Blueprint Search Dark](screenshots/dark/localhost_3000_blueprint-search.png) |
-| Blueprint Detail | ![Blueprint Detail Dark](screenshots/dark/localhost_3000_blueprint-detail.png) |
-| Blueprint Hero   | ![Blueprint Hero Dark](screenshots/dark/localhost_3000_blueprint-hero.png)     |
-| Blueprint Feed   | ![Blueprint Feed Dark](screenshots/dark/localhost_3000_blueprint-feed.png)     |
-| Search           | ![Search Dark](screenshots/dark/localhost_3000_search.png)                     |
+| Home             | ![Home](screenshots/desktop/localhost_3001.png)                              |
+| Blueprint Grid   | ![Blueprint Grid](screenshots/desktop/localhost_3001_blueprint-grid.png)     |
+| Blueprint Search | ![Blueprint Search](screenshots/desktop/localhost_3001_blueprint-search.png) |
+| Blueprint Detail | ![Blueprint Detail](screenshots/desktop/localhost_3001_blueprint-detail.png) |
+| Blueprint Hero   | ![Blueprint Hero](screenshots/desktop/localhost_3001_blueprint-hero.png)     |
+| Blueprint Feed   | ![Blueprint Feed](screenshots/desktop/localhost_3001_blueprint-feed.png)     |
+| Search           | ![Search](screenshots/desktop/localhost_3001_search.png)                     |
 
 ## Project Structure
 
@@ -105,8 +79,8 @@ src/
 Design tokens อยู่ใน `src/app/globals.css`:
 
 ```css
---color-primary-500: #e85d04 /* Orange accent */ --color-primary-600: #cc5200
-  --color-navy-800: #0d1b2a /* Dark navy text */ --color-navy-600: #1a2840
+--color-primary-500: #008fa6 /* Teal accent */ --color-primary-600: #007a8f
+  --color-navy-800: #0a1820 /* Ocean deep text */ --color-navy-600: #163540
   --color-gray-100: #f5f5f5 /* Page background */ /* Dark Mode */
   --bg-page: #0f1117 --bg-card: #1a1f2e --text-primary: #f0f0f0;
 ```

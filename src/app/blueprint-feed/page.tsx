@@ -82,13 +82,13 @@ function CampaignCard({
       <div className="relative aspect-[16/9] overflow-hidden">
         <Image src={image} alt={title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
         {/* Tag badge */}
-        <span className="absolute top-3 left-3 bg-[#e85d04] text-white text-xs font-semibold px-3 py-1 rounded-full">
+        <span className="absolute top-3 left-3 bg-[#008fa6] text-white text-xs font-semibold px-3 py-1 rounded-full">
           {tag}
         </span>
       </div>
       {/* Content */}
       <div className="p-4 flex flex-col flex-1">
-        <h3 className="font-bold text-[#0d1b2a] text-sm leading-snug mb-2 group-hover:text-[#e85d04] transition-colors line-clamp-2">
+        <h3 className="font-bold text-[#0a1820] text-sm leading-snug mb-2 group-hover:text-[#008fa6] transition-colors line-clamp-2">
           {title}
         </h3>
         <p className="text-xs text-gray-500 leading-relaxed flex-1 line-clamp-2 mb-3">
@@ -107,10 +107,10 @@ function CampaignCard({
 function SectionRow({ heading, href }: { heading: string; href: string }) {
   return (
     <div className="flex items-center justify-between">
-      <h2 className="text-xl font-extrabold text-[#0d1b2a]">
-        <span className="border-l-4 border-[#e85d04] pl-3">{heading}</span>
+      <h2 className="text-xl font-extrabold text-[#0a1820]">
+        <span className="border-l-4 border-[#008fa6] pl-3">{heading}</span>
       </h2>
-      <Link href={href} className="flex items-center gap-1 text-sm text-[#e85d04] font-semibold hover:gap-2 transition-all">
+      <Link href={href} className="flex items-center gap-1 text-sm text-[#008fa6] font-semibold hover:gap-2 transition-all">
         See All <ArrowRight size={14} />
       </Link>
     </div>
@@ -126,11 +126,11 @@ export default function BlueprintFeedPage() {
 
         {/* ── Breadcrumb ──────────────────────────────── */}
         <nav className="flex items-center gap-1.5 text-sm text-gray-500">
-          <Link href="/blueprint-grid" className="flex items-center gap-1 hover:text-[#e85d04] transition-colors">
+          <Link href="/blueprint-grid" className="flex items-center gap-1 hover:text-[#008fa6] transition-colors">
             <Home size={14} /> Home
           </Link>
           <ChevronRight size={13} className="text-gray-300" />
-          <span className="text-[#e85d04] font-medium">Promotions & News</span>
+          <span className="text-[#008fa6] font-medium">Promotions & News</span>
         </nav>
 
         {/* ── Full-width hero banner ───────────────────── */}
@@ -147,7 +147,7 @@ export default function BlueprintFeedPage() {
 
           {/* Text overlay (left-aligned) */}
           <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-14">
-            <span className="inline-block bg-[#e85d04] text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-3">
+            <span className="inline-block bg-[#008fa6] text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-3">
               Latest Campaigns
             </span>
             <h1 className="text-white font-extrabold text-2xl md:text-4xl leading-tight max-w-lg drop-shadow-md mb-3">
@@ -160,7 +160,7 @@ export default function BlueprintFeedPage() {
             </p>
             <Link
               href="#promotions"
-              className="inline-flex self-start items-center gap-2 bg-[#e85d04] hover:bg-[#cf4f02] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors"
+              className="inline-flex self-start items-center gap-2 bg-[#008fa6] hover:bg-[#007a8f] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors"
             >
               Browse Promotions <ArrowRight size={14} />
             </Link>
