@@ -5,28 +5,28 @@
    ============================================= */
 
 :root {
-  /* --- Primary Orange --- */
-  --color-primary-50: #fff8f0;
-  --color-primary-100: #fff3e0;
-  --color-primary-200: #ffe0b2;
-  --color-primary-300: #ff8c38;
-  --color-primary-400: #f47000;
-  --color-primary-500: #e85d04;
-  --color-primary-600: #cc5200;
-  --color-primary-700: #a84300;
-  --color-primary-800: #853400;
+  /* --- Primary Teal (Ocean) --- */
+  --color-primary-50: #f0fbfc;
+  --color-primary-100: #ccf2f6;
+  --color-primary-200: #99e5ed;
+  --color-primary-300: #33c5d8;
+  --color-primary-400: #00a8bf;
+  --color-primary-500: #008fa6;
+  --color-primary-600: #007a8f;
+  --color-primary-700: #00636f;
+  --color-primary-800: #004d56;
 
-  /* --- Dark Navy --- */
-  --color-navy-50: #eff4ff;
-  --color-navy-100: #d4e4ff;
-  --color-navy-200: #a8c8ff;
-  --color-navy-300: #5a8fe0;
-  --color-navy-400: #2d5ba8;
-  --color-navy-500: #1a3a75;
-  --color-navy-600: #1a2840;
-  --color-navy-700: #1a1a2e;
-  --color-navy-800: #0d1b2a;
-  --color-navy-900: #070f18;
+  /* --- Ocean Deep Navy --- */
+  --color-navy-50: #eff6f8;
+  --color-navy-100: #d4eaef;
+  --color-navy-200: #a8d5df;
+  --color-navy-300: #5a9db0;
+  --color-navy-400: #2d6e88;
+  --color-navy-500: #1a4a5e;
+  --color-navy-600: #163540;
+  --color-navy-700: #122530;
+  --color-navy-800: #0a1820;
+  --color-navy-900: #050e14;
 
   /* --- Gray Scale --- */
   --color-gray-50: #fafafa;
@@ -111,7 +111,7 @@
     --text-primary: #f0f0f0;
     --text-secondary: #a0a0a0;
     --border-color: #2a2a3a;
-    /* Primary orange: unchanged — excellent on dark bg */
+    /* Primary teal: unchanged — excellent on dark bg */
   }
 }
 
@@ -123,18 +123,18 @@
   --font-sans: var(--font-sarabun), "Noto Sans Thai", sans-serif;
 
   /* Custom colors exposed as Tailwind utilities */
-  --color-primary-50: #fff8f0;
-  --color-primary-100: #fff3e0;
-  --color-primary-200: #ffe0b2;
-  --color-primary-300: #ff8c38;
-  --color-primary-400: #f47000;
-  --color-primary-500: #e85d04;
-  --color-primary-600: #cc5200;
-  --color-primary-700: #a84300;
+  --color-primary-50: #f0fbfc;
+  --color-primary-100: #ccf2f6;
+  --color-primary-200: #99e5ed;
+  --color-primary-300: #33c5d8;
+  --color-primary-400: #00a8bf;
+  --color-primary-500: #008fa6;
+  --color-primary-600: #007a8f;
+  --color-primary-700: #00636f;
 
-  --color-navy-700: #1a1a2e;
-  --color-navy-800: #0d1b2a;
-  --color-navy-900: #070f18;
+  --color-navy-700: #122530;
+  --color-navy-800: #0a1820;
+  --color-navy-900: #050e14;
 
   --color-indigo-500: #2b55cc;
   --color-indigo-600: #1e3fa0;
